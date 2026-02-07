@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab 1 Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
+
+<h1 id="page-title">Registration Form</h1>
+
+<!-- Basic form to collect user info -->
+<form action="#" method="post" class="registration-form">
+
+    <!-- User info section -->
+    <fieldset>
+        <legend>User Information</legend>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Email uses built in browser validation -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="birthdate">Birth Date:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required>
+    </fieldset>
+
+    <br>
+
+    <!-- Account section -->
+    <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass" required minlength="8">
+        <br><br>
+
+        <!-- Dropdown for selecting role -->
+        <label for="type">User Type:</label><br>
+        <select id="type" name="type" required>
+            <option value="">Choose one</option>
+            <option value="student">Student</option>
+            <option value="staff">Staff</option>
+            <option value="visitor">Visitor</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Preferences -->
+    <fieldset>
+        <legend>Contact Preferences</legend>
+
+        <p>How should we contact you?</p>
+
+        <input type="radio" id="emailContact" name="contact" value="email" required>
+        <label for="emailContact">Email</label><br>
+
+        <input type="radio" id="phoneContact" name="contact" value="phone">
+        <label for="phoneContact">Phone</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Interests</legend>
+
+        <input type="checkbox" id="web" name="interest" value="web">
+        <label for="web">Web Development</label><br>
+
+        <input type="checkbox" id="design" name="interest" value="design">
+        <label for="design">Design</label><br>
+
+        <input type="checkbox" id="programming" name="interest" value="programming">
+        <label for="programming">Programming</label>
+    </fieldset>
+
+    <br>
+
+    <!-- Extra comments -->
+    <fieldset>
+        <legend>Comments</legend>
+
+        <label for="msg">Anything else?</label><br>
+        <textarea id="msg" name="msg" rows="4" cols="35"></textarea>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

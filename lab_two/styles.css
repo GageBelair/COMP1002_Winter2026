@@ -1,0 +1,62 @@
+/* 
+   Element selector
+   Sets the background color and font for the entire page
+*/
+body {
+  background-color: #ADD8E6;
+  font-family: Arial, sans-serif;
+}
+
+/* 
+   ID selector
+   Changes the color and alignment of the main heading
+*/
+#page-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 
+   Class selector
+   Adds spacing and a border around the form
+*/
+.registration-form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #bbb;
+  background-color: #ffffff;
+}
+
+/* 
+   Element selector
+   Modifies label text style and spacing
+*/
+label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* 
+   Attribute selector
+   Adds padding and margin to text-based form inputs
+*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  padding: 6px;
+  margin-top: 4px;
+}
+
+/* 
+   Pseudo-class selector
+   Changes submit button color when hovered
+*/
+input[type="submit"]:hover {
+  background-color: #2c3e50;
+  color: white;
+}
