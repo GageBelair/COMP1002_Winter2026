@@ -13,9 +13,9 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  h1,
+  .site-header h1.page-title,
   h2 {
-    color: #BADA55;
+    color: #BADA55;  
   }
   
   .site-header h1 {

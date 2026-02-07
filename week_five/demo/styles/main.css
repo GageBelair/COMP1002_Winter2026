@@ -24,13 +24,16 @@
 body {
   background: #000;
   color: #111;
+  font-size: 1.6rem; 
+  line-height: 1.8; 
+  font-family: "Google Sans", sans-serif;
 
 }
 
 /* create a container 
 what kind of selector is this? */ 
 .container {
-  width: 90%;
+  width: 90%; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -38,6 +41,11 @@ what kind of selector is this? */
 /* Main content panel */
 main {
   background: #eee;
+  padding: 1.6rem; 
+}
+/* root element is html */
+html {
+  font-size: 10px; 
 }
 
 /* =========================================================
@@ -49,7 +57,11 @@ h3,
 h4,
 h5,
 h6 {
-  
+   font-family: "Roboto", sans-serif;
+   /* different units for setting font size - px, em, rem */
+   font-size: 3rem; 
+   color: #4169E1;
+   letter-spacing: 2px;
 }
 
 /* Optional: Make the nav title readable on dark header */
@@ -61,6 +73,9 @@ nav h1 {
 ========================================================= */
 section {
     background: #fff;      /* makes sections stand out on main's gray */
+    padding: 1.6rem 2.2rem; 
+    margin: 1rem 0; 
+    border: 1px dashed #ff8c00; 
   }
 
 
@@ -73,22 +88,35 @@ section {
    - It scrolls normally until it reaches top: 0
    - Then it "sticks" without being removed from layout flow like fixed */
 header {
- 
+  position: sticky; 
+  top: 0; 
+  background-color: #000; 
+  z-index:2;  
 }
 
 /* Give the nav area some internal space */
 nav {
-
+  padding: 0.8rem 0 1.2rem; 
 }
 
 /* Flexbox is ideal for horizontal nav links */
 nav ul {
-
+  list-style:none; 
+  display:flex; /*flex-container */
+  gap: 0.9rem; 
+  flex-wrap:wrap;
 }
 
 
 nav a {
-  
+  text-decoration:none;
+  text-transform: uppercase;
+  display:inline-block; 
+  padding: 1rem 1.2rem;
+  color: #fff;
+  border: 1px solid #eee; 
+  border-radius: 5px; 
+
 }
 
 
