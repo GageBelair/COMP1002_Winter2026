@@ -1,0 +1,92 @@
+ /* ========================
+       Base Page Styles
+    ======================== */
+    body {
+        font-family: system-ui, sans-serif;
+        background: #f6f6f6;
+        padding: 2rem;
+      }
+  
+      h1 {
+        margin-bottom: 1rem;
+      }
+  
+      h2 {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      section {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        margin-bottom: 2rem;
+      }
+  
+      .demo-row {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+  
+      /* ========================
+         ❌ WITHOUT REUSABLE COMPONENTS
+      ======================== */
+  
+      .login-btn {
+        padding: 0.75rem 1.25rem;
+        border-radius: 4px;
+        font-weight: 600;
+        border: none;
+        background-color: navy;
+        color: white;
+      }
+  
+      .signup-btn {
+        padding: 0.75rem 1.25rem;
+        border-radius: 4px;
+        font-weight: 600;
+        border: none;
+        background-color: navy;
+        color: white;
+      }
+  
+      .learn-btn {
+        padding: 0.75rem 1.25rem;
+        border-radius: 4px;
+        font-weight: 600;
+        border: none;
+        background-color: lightgray;
+      }
+  
+      .details-btn {
+        padding: 0.75rem 1.25rem;
+        border-radius: 4px;
+        font-weight: 600;
+        border: none;
+        background-color: lightgray;
+      }
+  
+/* ========================
+     WITH REUSABLE COMPONENTS
+======================== */
+
+.btn {
+  padding: 0.75rem 1.25rem; 
+  border-radius: 4px;
+  font-weight: 600; 
+  border: none; 
+  cursor:pointer; 
+}
+
+.btn-primary {
+  background-color: #D05353;
+  color: #fff; 
+}
+
+.btn-warning {
+  background-color: red; 
+  color: #fff; 
+  border: 2px solid #000; 
+}

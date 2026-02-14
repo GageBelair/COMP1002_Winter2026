@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Detective</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>CSS Detective</h1>
+    <nav class="site-nav">
+      <a href="#cards">Cards</a>
+      <a href="#form">Form</a>
+      <a href="#list">List</a>
+    </nav>
+  </header>
+
+  <main class="stack">
+    <section id="cards" class="stack">
+      <h2>Cards</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Card One</h3>
+          <p>Some text here.</p>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn">Secondary</button>
+        </article>
+
+        <article class="card">
+          <h3>Card Two</h3>
+          <p>Some text here.</p>
+          <button class="btn">Secondary</button>
+          <button class="btn">Secondary</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="form" class="stack">
+      <h2>Form</h2>
+      <form class="stack">
+        <label>Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>Password
+          <input type="password" placeholder="••••••••" required />
+        </label>
+
+        <button class="btn btn-primary" type="submit">Create Account</button>
+      </form>
+    </section>
+
+    <section id="list" class="stack">
+      <h2>List</h2>
+      <ul class="todo-list">
+        <li>Finish Lab</li>
+        <li>Refactor CSS</li>
+        <li>Try one modern selector</li>
+        <li>Submit Project Phase One</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>

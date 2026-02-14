@@ -1,0 +1,45 @@
+body {
+    font-family: system-ui, sans-serif;
+    padding: 2rem;
+    background: #f6f6f6;
+  }
+
+  nav  {
+    display: flex; 
+    gap: 1.5rem; 
+  }
+
+  section {
+    background: white;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+
+/* Cool Modern CSS Selectors */ 
+
+/* grouping with is() */ 
+
+:is(h1, h2, p) {
+  margin-bottom: 0.5rem;  
+}
+
+/* exclusion with not */ 
+nav a:not(.highlight) {
+  color: navy; 
+  text-decoration:none; 
+}
+
+/* parent selection with has() */
+section:has(button) {
+  border-left: 6px solid teal; 
+  padding-left: 1rem; 
+}
+
+/*accessible focus*/
+a:focus-visible, 
+button:focus-visible {
+  outline: 3px solid teal; 
+  outline-offset: 2px;
+}

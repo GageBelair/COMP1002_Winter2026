@@ -1,0 +1,96 @@
+   /* =========================
+       1) CSS VARIABLES 
+    ========================== */
+   :root {
+      --primary-color:#0081AF; 
+      --secondary-color:#2DC7FF;
+      --accent-color: #EABA6B;
+      --background-color: #EAD2AC;
+      --card-background: #eaeaea; 
+      --spacing : 1rem; 
+      --radius: 6px; 
+   }
+
+    /* =========================
+       2) BASE STYLES
+    ========================== */
+    body {
+      font-family: system-ui, sans-serif;
+      background: var(--background-color);
+      padding: 2rem;
+    }
+
+    h1, h2, p {
+      margin: 0 0 0.5rem;
+    }
+
+    /* =========================
+       3) LAYOUT 
+    ========================== */
+   
+    header {
+      display: flex; 
+      justify-content:space-between;
+      align-items: center; 
+      margin-bottom: 2rem; 
+    }
+
+    nav {
+      display: flex; 
+      gap: 0.5rem; 
+    }
+
+    main {
+      display: flex; 
+      gap:1.5rem; 
+      flex-wrap: wrap; 
+    }
+
+
+    /* =========================
+       4) COMPONENTS 
+    ========================== */
+    .btn {
+      padding: 0.6rem 1.2rem; 
+      border-radius: var(--radius); 
+      border:none; 
+      font-weight: 600; 
+      cursor: pointer; 
+    }
+
+    .btn-primary {
+      background-color: var(--secondary-color); 
+      color: #fff; 
+    }
+
+    .btn-secondary {
+      background-color: var(--primary-color); 
+      color: #fff; 
+    }
+
+    .card {
+      background: var(--card-background); 
+      border-radius: var(--radius);
+      width: 300px; 
+      border: 1px solid #ddd; 
+      padding: var(--spacing); 
+    }
+
+
+    /* =========================
+       5) MODERN SELECTORS 
+    ========================== */
+
+    :is(.card h2, .card p) {
+      margin-bottom: 0.75rem; 
+    }
+
+    .btn:not(.btn-primary) {
+      opacity: 0.85; 
+    }
+ 
+    .card:has(.btn-primary) {
+      border-left: 6px solid var(--secondary-color); 
+    }
+
+  

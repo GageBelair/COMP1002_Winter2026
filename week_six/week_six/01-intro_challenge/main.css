@@ -1,0 +1,32 @@
+/* Warm Up Challenges 
+
+1: Target only the last item in the list and make it stand out.  */
+
+.todo-list li:last-child {
+  text-decoration:underline; 
+  color: #A50104;
+}
+
+/*2: Style links differently when hovered and when focused (keyboard).*/
+.site-nav a:hover,
+.site-nav a:focus {
+  border: 1px solid red; 
+  padding: 1em; 
+} 
+
+/*3: Style all buttons except the “primary” button.*/
+
+.btn:not(.btn-primary) {
+  background-color: #FF570A; 
+  color: #FFF;
+}
+  
+
+
+/*
+
+(Bonus): Add spacing between all items in .stack except the first.
+
+*/ 
+
+

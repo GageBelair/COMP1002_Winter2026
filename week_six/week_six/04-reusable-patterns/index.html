@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Reusable CSS Components Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1>Reusable CSS Components: Before & After</h1>
+
+  <section>
+    <h2>❌ Without Reusable Components (Repetition)</h2>
+    <p>
+      Each button has its own class, even though the styles are almost identical.
+      Changes require editing multiple rules.
+    </p>
+
+    <div class="demo-row">
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+
+    <div class="demo-row">
+      <button class="learn-btn">Learn More</button>
+      <button class="details-btn">Details</button>
+    </div>
+  </section>
+
+  <!-- ========================
+       WITH REUSABLE COMPONENTS
+  ========================= -->
+  <section>
+    <h2>✅ With Reusable Components</h2>
+    <p>
+      Shared styles live in a base class, and variants control appearance.
+      New buttons require no new CSS.
+    </p>
+
+    <div class="demo-row">
+      <button class="btn btn-primary">Login</button>
+      <button class="btn btn-primary">Sign Up</button>
+    </div>
+
+    <div class="demo-row">
+      <button class="btn btn-warning">Delete All The Things</button>
+      <button class="btn">Details</button>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
