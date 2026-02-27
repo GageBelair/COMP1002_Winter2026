@@ -1,0 +1,34 @@
+/* FLOATS.CSS
+   Old-school layout using floats.
+   Built for wrapping images — not full layout.
+*/ 
+.layout {
+    margin: 1.5rem auto;
+}
+
+.layout article {
+
+}
+
+.layout aside {
+
+}
+
+/* Cards */
+.card {
+    float: left;
+    width: 30%;
+    margin-right: 3.33%;
+}
+
+.card:nth-child(3) {
+    margin-right: 0;
+}
+
+.cards {
+    margin: 1.5rem auto;
+
+}
+
+.site-footer {
+}

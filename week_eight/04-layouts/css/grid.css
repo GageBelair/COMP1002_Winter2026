@@ -1,0 +1,20 @@
+/* GRID.CSS
+   True 2D layout system.
+*/
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layout {
+  margin: 1.5rem auto;
+}
+
+.cards {
+  margin: 1.5rem auto;
+}
+
+/* Let's Make it Responsive! */ 
+ 

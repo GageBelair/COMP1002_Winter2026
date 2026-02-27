@@ -1,0 +1,49 @@
+/* Base Styles */ 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fb;
+    color: #111;
+  }
+
+  .grid-container {
+    width: 90%; 
+    margin: 0 auto; 
+    /* ADD GRID STYLES HERE */ 
+   
+  }
+
+  header{
+    background-color: #333; 
+    color: #FFF; 
+    padding: 1rem;
+    text-align:center; 
+  }
+
+  footer {
+    background-color: #333; 
+    color: #FFF; 
+    padding: 1rem;
+    text-align:center; 
+  }
+
+  article {
+    background-color: #4FB286;
+    padding: 1rem;  
+  }
+
+  aside {
+    background-color: #50FFB1; 
+    padding: 1rem; 
+
+  }
+
+  aside a {
+    color: #333; 
+  }
+
