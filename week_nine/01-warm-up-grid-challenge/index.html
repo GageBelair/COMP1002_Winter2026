@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spot the Grid Error</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background:#f4f4f4;
+}
+
+h1{
+    text-align:center;
+}
+
+section{
+    margin-bottom:50px;
+}
+
+.box{
+    background:white;
+    border:2px solid #333;
+    padding:20px;
+    text-align:center;
+}
+
+/* ---------------- */
+/* Error #1 */
+/* ---------------- */
+
+.crime1{
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+
+/* ---------------- */
+/* Error #2 */
+/* ---------------- */
+
+.crime2{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+
+.header-crime{
+    grid-column:1 / 5;
+}
+
+/* ---------------- */
+/* Error #3 */
+/* ---------------- */
+
+.crime3{
+    display:flex;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+
+/* ---------------- */
+/* Error #4 */
+/* ---------------- */
+
+.crime4{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>CSS Grid Errors</h1>
+<p>Each layout below contains a CSS mistake. Can you identify the error?</p>
+
+<hr>
+
+<section>
+
+<h2>Error #1 — The Missing Grid</h2>
+<p><strong>Question:</strong> Why are the boxes not forming columns?</p>
+
+<div class="crime1">
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+</div>
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>Error #2 — The Impossible Column</h2>
+<p><strong>Question:</strong> Why is the header breaking the grid?</p>
+
+<div class="crime2">
+<div class="box header-crime">Header</div>
+<div class="box">Main</div>
+<div class="box">Sidebar</div>
+</div>
+
+
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>Error #3 — Flexbox in Disguise</h2>
+<p><strong>Question:</strong> Why aren't the grid columns working?</p>
+
+<div class="crime3">
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+</div>
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>Error #4 — The Mystery Gap</h2>
+<p><strong>Question:</strong> Why is the spacing not appearing?</p>
+
+<div class="crime4">
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+</div>
+
+</section>
+
+</body>
+</html>
