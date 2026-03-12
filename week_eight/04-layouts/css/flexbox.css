@@ -1,0 +1,38 @@
+/* FLEXBOX.CSS
+   Modern 1D layout system.
+*/
+
+.header-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav {
+   display: flex;
+}
+
+.layout {
+   margin: 1.5rem auto;
+   display: flex; 
+   gap: 1rem; 
+}
+
+article {
+   flex: 2; 
+}
+
+aside {
+   flex: 1; 
+}
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   margin: 1.5rem auto;
+}
+
+.card {
+   flex: 1 1 250x; 
+}

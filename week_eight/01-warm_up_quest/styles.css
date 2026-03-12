@@ -1,0 +1,76 @@
+/* Basic page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    background: #f4f4f4;
+    box-sizing: border-box; 
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+/* Card styling */
+.card {
+    height: 150px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    background: #ff595e;
+}
+
+.card2 {
+    background: #ffca3a;
+}
+
+.card3 {
+    background: #8ac926;
+}
+
+.card4 {
+    background: #1982c4;
+}
+
+.card5 {
+    background: #6a4c93;
+}
+
+.card6 {
+    background: #ff7f50;
+}
+
+/* Your Solution Here */ 
+
+/* OPTION ONE - FLEXBOX - GOOD */ 
+
+/*.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+}
+
+.card {
+    width:32%; 
+}*/ 
+
+/* OPTION TWO - GRID - BETTER */ 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+}
+
+
+
+
+
+

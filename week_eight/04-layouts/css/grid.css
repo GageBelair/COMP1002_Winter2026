@@ -1,0 +1,41 @@
+/* GRID.CSS
+   True 2D layout system.
+*/
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Let's Make it Responsive! */
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 850px) {
+
+  .layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem auto;
+  }
+
+}

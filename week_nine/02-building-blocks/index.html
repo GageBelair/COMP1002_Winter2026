@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Website Building Blocks... & Buttons! </title>
+    <!-- Web Building Block #2 - Presentation -->
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            min-height: 600px;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #000;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        h1,
+        footer {
+            text-align: center;
+        }
+
+        .fun-btn {
+            font-size: 1.2rem;
+            padding: 2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+            background: linear-gradient(45deg, #ff6ec4, #7873f5);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+            transition: all 0.25s ease;
+            margin: 4rem;
+        }
+
+        /* hover animation */
+        .fun-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <!-- Building Block One - Structure -->
+        <h1> Website Building Blocks... & Buttons!</h1>
+        <button class="fun-btn"> CLICK ME! </button>
+        </main>
+        <footer>
+            <p> Week 9 - COMP1002 - Intro to JS </p>
+        </footer>
+        <!-- Web Building Block #3 - Interactivity -->
+        <script>
+            // finds an element in the webpage and stores it in a variable.
+
+            // Document represents the entire webpage.JavaScript always starts with the document when interacting with HTML
+            // querySelector()- A method used to select an element from the page. It uses CSS selectors to find elements
+
+            let button = document.querySelector(".fun-btn");
+
+            //addEventListener - a method used to listen for events
+            //An event is something that happens on the page
+            button.addEventListener("click", function () {
+                alert("JavaScript is working!");
+                console.log ("Heeyooooo!"); 
+            });
+        </script>
+</body>
+
+</html>
