@@ -81,7 +81,43 @@ img {
   margin: 1.5rem auto;
 }
 
-/* Your Code Here! */ 
+/* Your Code Here! */
+
+/* card displayed using grid */
+.cards {
+    display: grid;
+    /* 3 column grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* spacing between cards */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+    /* first card */
+    .cards .card:nth-child(1) {
+        grid-column: span 3;
+        /* span 3 columns = full row */
+    }
+
+    /* fifth card */
+    .cards .card:nth-child(5) {
+        grid-column: span 2;
+        /* span 2 = double the size as the template shows */
+    }
 
 /* Bonus Challenge - 2 EXTRA marks */ 
-/* make the layout responsive & mobile first design */ 
+/* make the layout responsive & mobile first design */
+
+/* tablet */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* mobile */
+@media (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
