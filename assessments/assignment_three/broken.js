@@ -4,7 +4,8 @@
 let helloBtn = document.querySelector("#helloBtn");
 let greetingOutput = document.querySelector("#greetingOutput");
 
-let themeBtn = document.querySelector("#themeButton");
+// #themeButton was written wrong so it is not selecting the button correctly
+let themeBtn = document.querySelector("#themeBtn");
 
 let messageInput = document.querySelector("#messageInput");
 let liveOutput = document.querySelector("#liveOutput");
@@ -19,17 +20,22 @@ helloBtn.addEventListener("click", function() {
 });
 
 // 2. Theme Toggle
+// darkmode was written wrong so it is not toggling the class correctly
 themeBtn.addEventListener("click", function() {
-    document.body.classList.toggle("darkmode");
+    document.body.classList.toggle("dark-mode");
 });
 
 // 3. Live Input
-messageInput.addEventListener("change", function() {
-    liveOutput.textContent = messageinput.value;
+// used change instead of input event
+// also messageinput was written wrong so it is not updating the live output
+messageInput.addEventListener("input", function() {
+    liveOutput.textContent = messageInput.value;
 });
 
 // 4. Welcome Form
-welcomeForm.addEventListener("submit", function() {
+// missing event parameter so preventDefault was not working
+// added event parameter to function
+welcomeForm.addEventListener("submit", function(event) {
     event.preventDefault();
     formOutput.textContent = "Welcome, " + nameInput.value;
 });
