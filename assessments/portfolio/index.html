@@ -16,10 +16,15 @@
 </head>
 
 <body class="about-page">
+
     <div class="container">
+
         <!-- Header -->
         <header>
             <h1>Gage Belair</h1>
+
+            <button id="themeToggle">Toggle Theme</button>
+
             <p class="subtitle">Computer Programming College Student</p>
 
             <nav aria-label="Primary navigation">
@@ -33,13 +38,22 @@
 
         <!-- Main Content -->
         <main>
+
+            <!-- About Section -->
             <section id="about">
                 <h2>About Me</h2>
 
-                <div class="about-content">
-                    <img src="images/profile.jpg" alt="Profile Photo" />
+                <!-- Layout container (keeps same class for CSS) -->
+                <section class="about-content">
 
-                    <div>
+                    <!-- Profile Image -->
+                    <figure>
+                        <img src="images/profile.jpg" alt="Profile photo of Gage Belair">
+                    </figure>
+
+                    <!-- About Description -->
+                    <article>
+
                         <p>
                             I am currently enrolled in COMP1002 and developing strong foundational
                             skills in semantic HTML, CSS layout, and JavaScript. My coursework
@@ -47,21 +61,28 @@
                         </p>
 
                         <h3>Technical Skills</h3>
+
                         <ul>
                             <li>Semantic HTML5 Structure</li>
                             <li>CSS (Box Model, Display, Position)</li>
                             <li>Git & GitHub Workflow</li>
                         </ul>
-                    </div>
-                </div>
+
+                    </article>
+
+                </section>
+
             </section>
+
         </main>
 
         <!-- Footer -->
         <footer>
             <p>COMP1002 — Personal Portfolio</p>
         </footer>
+
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
