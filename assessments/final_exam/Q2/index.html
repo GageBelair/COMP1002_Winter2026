@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Workshop Registration Form</title>
+</head>
+
+<body>
+
+    <h1 id="page-title">Tech Workshop Registration Form</h1>
+
+    <section>
+        <form id="regForm">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" required>
+
+            <label for="emailInput">Email:</label>
+            <input type="email" required>
+
+            <label for="level">Choose a level</label>
+            <select name="level">
+                <option value="opt1">Beginner</option>
+                <option value="opt2">Intermediate</option>
+                <option value="opt3">Advanced</option>
+            </select>
+
+            <button type="submit">Submit</button>
+
+        </form>
+        <p id="formOutput"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
